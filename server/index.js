@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
+const mysql = require('mysql');
 
 app.get('/', (req, res) => {
-    res.send('hello world');
+    res.send('Hello, world!');
 })
 
 app.listen(3001, ()=> {
